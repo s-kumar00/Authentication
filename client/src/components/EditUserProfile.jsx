@@ -102,7 +102,7 @@ const EditUserProfile = () => {
         newPassword,
       });
       if (response.data.alert) {
-        navigate("/");
+        handleSignOut();
         toast.success(response.data.message, toastOptions);
       } else {
         toast.error(response.data.message, toastOptions);
