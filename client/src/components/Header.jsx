@@ -25,7 +25,7 @@ const Header = () => {
   const toggleDarkMode = () => {
     dispatch(themeChange(theme === "dark" ? "light" : "dark"));
   };
-  
+
   return (
     <header className="fixed top-0 left-0 m-auto max_pad_container w-full bg-white ring-1 ring-slate-200 z-10 shadow-md rounded-b-md dark:bg-black dark:text-white">
       <div className="px-4 flexBetween py-3 max-xs:px-2">
